@@ -665,7 +665,7 @@ body {
     text-align: center;
     color: #f5f5f5;
     font-size: 1.2rem;
-    background: url(/dist/img/Animated\ Shape.svg) no-repeat center center/cover;
+    background: url(/img/Animated\ Shape.svg) no-repeat center center/cover;
     padding-top: 0rem;
   }
   .cennik img {
@@ -864,7 +864,7 @@ body {
     width: 100%;
     min-height: 100vh;
     z-index: 98;
-    background: url(/dist/img/menu\ background.svg) no-repeat center/cover;
+    background: url(/img/menu\ background.svg) no-repeat center/cover;
     padding-top: 120px;
     transition: 0.4s;
   }
@@ -922,7 +922,7 @@ body {
     display: flex;
   }
   #main-kursy {
-    background: url(/dist/img/Animated\ Shape\ \ height.svg) no-repeat center center/cover;
+    background: url(/img/Animated\ Shape\ \ height.svg) no-repeat center center/cover;
   }
   .section h2 {
     font-size: 2rem;
@@ -960,7 +960,7 @@ body {
     color: #f5f5f5;
   }
   .cennik {
-    background: url(/dist/img/Animated\ Shape.svg) no-repeat center center/cover;
+    background: url(/img/Animated\ Shape.svg) no-repeat center center/cover;
     padding-top: 6rem;
   }
   .cennik img {
@@ -981,7 +981,7 @@ body {
     border-color: transparent #f45b69 transparent transparent;
   }
   #galeria {
-    background: url(/dist/img/Animated\ Shape\ \ height.svg) center center/cover no-repeat;
+    background: url(/img/Animated\ Shape\ \ height.svg) center center/cover no-repeat;
   }
   #galeria .container {
     display: block;
@@ -1014,7 +1014,7 @@ body {
     filter: none;
   }
   #kontact {
-    background: url(/dist/img/Animated\ Shape\ \ height.svg) no-repeat center center/cover;
+    background: url(/img/Animated\ Shape\ \ height.svg) no-repeat center center/cover;
     padding-top: 2rem;
     height: 100%;
   }
