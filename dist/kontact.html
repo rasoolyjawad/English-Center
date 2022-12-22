@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./fullpage.min.css" />
+    <link rel="stylesheet" href="./styles/lightbox.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>English Center | Kontact</title>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <div class="container">
+        <a href="./index.html"
+          ><img class="mob-logo" src="/dist/img/English Center.png" alt=""
+        /></a>
+        <ul>
+          <li><a href="index.html">Strona Głowna</a></li>
+          <li><a href="kursy.html">Kursy</a></li>
+          <li><a href="onas.html">O nas</a></li>
+          <li>
+            <img src="/dist/img/English Center.png" alt="" />
+          </li>
+          <li><a href="cennik.html">Cennik</a></li>
+
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="kontact.html" class="current">Kontact</a></li>
+        </ul>
+
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
+    </nav>
+    <nav class="mobile-nav">
+      <a href="index.html">Strona Głowna</a>
+      <a href="kursy.html">Kursy</a>
+      <a href="onas.html">O nas</a>
+      <a href="cennik.html">Cennik</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="kontact.html" class="current">Kontact</a>
+    </nav>
+    <section id="kontact">
+      <div class="container">
+        <div class="left">
+          <h1>Skontaktuj się z nami</h1>
+          <div>
+            <i class="fa-solid fa-mobile-screen"></i>
+            <p>+48-883-732-702</p>
+            <br />
+            <i class="fa-solid fa-envelope-circle-check"></i>
+            <p>mail@ecenter.com</p>
+            <br />
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Koszalinska 45, Gdansk 75-99</p>
+            <br />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9337.334964763448!2d16.1645391063151!3d54.19187453851976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4701cd183994c1a3%3A0x5f4e33512ba6fefd!2sEnglish%20Center.%20Nauka%20j%C4%99zyka%20angielskiego!5e0!3m2!1sen!2spl!4v1670942918926!5m2!1sen!2spl"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="right">
+          <form action="" method="get">
+            <h2>możesz zadać więcej pytań</h2>
+            <br />
+            <p>
+              Prosimy o wypełnienie formularza, a my skontaktujemy się z
+              Państwem tak szybko, jak to możliwe.
+            </p>
+            <br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Imię"
+              required
+            />
+            <input
+              type="text"
+              required
+              id="l-name"
+              name="l-name"
+              placeholder="Nazwisko"
+            />
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <input
+              required
+              type="tel"
+              name="number"
+              id="number"
+              placeholder="Numer telefonu"
+              onkeypress="validate(event)"
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Napisz twój wiadomości...."
+            ></textarea>
+            <br />
+            <button
+              onclick="return changeText('submitbutton');"
+              id="submitbutton"
+              class="btn"
+            >
+              prześlij
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <button
+      onclick="topFunction()"
+      title="Go to top"
+      id="btnTop"
+      class="btn sml-btn"
+    >
+      Top &uarr;
+    </button>
+
+    <footer id="main-footer">
+      <div class="container">
+        <p>
+          &copy; Copyright 2023 All rights reserved.
+          <span
+            >Powered by -
+            <a target="_blank" href="https://jawadrasooly.netlify.app/"
+              >JR <i class="fas fa-bolt"></i></a
+          ></span>
+        </p>
+
+        <ul>
+          <li>
+            <a href="http://facebook.com"
+              ><i class="fa-brands fa-facebook fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="http://instagram.com"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:eckoszalin@gmail.com"
+              ><i class="fas fa-envelope fa-2x"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./javascript.js"></script>
+    <script src="./lightbox-plus-jquery.js"></script>
+  </body>
+</html>

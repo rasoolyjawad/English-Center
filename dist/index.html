@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./utilities.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>English Center | Home</title>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <div class="container">
+        <a href="./index.html"
+          ><img class="mob-logo" src="/dist/img/English Center.png" alt=""
+        /></a>
+        <ul>
+          <li><a href="index.html" class="current">Strona Głowna</a></li>
+          <li><a href="kursy.html">Kursy</a></li>
+          <li><a href="onas.html">O nas</a></li>
+          <li>
+            <img src="/dist/img/English Center.png" alt="" />
+          </li>
+          <li><a href="cennik.html">Cennik</a></li>
+
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="kontact.html">Kontact</a></li>
+        </ul>
+
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+      </div>
+    </nav>
+    <nav class="mobile-nav">
+      <a href="index.html" class="current">Strona Głowna</a>
+      <a href="kursy.html">Kursy</a>
+      <a href="onas.html">O nas</a>
+      <a href="cennik.html">Cennik</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="kontact.html">Kontact</a>
+    </nav>
+
+    <!-- img slider start -->
+    <div class="section-a">
+      <!-- Video -->
+      <!-- <div class="welcome">
+        <video width="520" height="380" autoplay muted loop>
+          <source src="/dist/vids/welcome.mp4" type="video/mp4" />
+        </video>
+      </div> -->
+      <div class="slider">
+        <div class="slides">
+          <!-- radio buttons start -->
+          <input type="radio" name="radiom-btn" id="radio1" />
+          <input type="radio" name="radiom-btn" id="radio2" />
+          <input type="radio" name="radiom-btn" id="radio3" />
+          <input type="radio" name="radiom-btn" id="radio4" />
+          <!-- slide img start -->
+          <div class="slide first">
+            <img src="./img/school 1.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/school 2.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/school 3.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./img/school 4.jpg" alt="" />
+          </div>
+
+          <!-- slide img end -->
+
+          <!-- automatic navigation start -->
+          <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!-- automatic navigation end -->
+          <!-- manual nav start -->
+
+          <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+          <!-- manual nav end -->
+        </div>
+      </div>
+    </div>
+
+    <div class="section-b">
+      <div class="container">
+        <div class="pics">
+          <img src="./img/kids.jpg" alt="" />
+          <img src="./img/teens.jpg" alt="" />
+          <img src="./img/adults.jpg" alt="" />
+          <img src="./img/exam.jpg" alt="" />
+          <img src="./img/private-lesson.jpg" alt="" />
+          <img src="./img/business.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <footer id="main-footer">
+      <div class="container">
+        <p>
+          &copy; Copyright 2023 All rights reserved.
+          <span
+            >Powered by -
+            <a target="_blank" href="https://jawadrasooly.netlify.app/"
+              >JR <i class="fas fa-bolt"></i></a
+          ></span>
+        </p>
+
+        <ul>
+          <li>
+            <a href="http://facebook.com"
+              ><i class="fa-brands fa-facebook fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="http://instagram.com"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:eckoszalin@gmail.com"
+              ><i class="fas fa-envelope fa-2x"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
