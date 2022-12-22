@@ -1,0 +1,563 @@
+@media screen and (max-width: 1200px) {
+  //header
+  #main-nav {
+    ul li img {
+      width: 150px;
+    }
+    ul {
+      @include flexcenter();
+      text-align: center;
+      width: 100%;
+    }
+    a {
+      font-size: 1rem;
+      padding: 0.4rem;
+    }
+    li {
+      padding: 0.4rem;
+    }
+  }
+  //footer
+  #main-footer {
+    p {
+      color: $brightColor;
+      padding: 0.5rem;
+    }
+    ul li a {
+      font-size: 0.8rem;
+    }
+    ul {
+      @include flexcenter();
+    }
+  }
+
+  //kursy
+
+  .section {
+    h2 {
+      font-size: 3rem;
+      padding: 0.7rem 0;
+
+      text-align: justify;
+    }
+    p {
+      text-align: justify;
+    }
+    img {
+      width: 300px;
+      @include borderMix();
+      margin: 1rem 0;
+    }
+    .student1 {
+      width: 600px;
+    }
+  }
+
+  #onas {
+    max-width: 700px;
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+
+  //cennik
+  .cennik {
+    background: $thirdColor;
+    padding: 0.6rem 0;
+    text-align: center;
+    color: $brightColor;
+    font-size: 1.2rem;
+    img {
+      width: 80px;
+    }
+    background: url(/dist/img/Animated\ Shape.svg) no-repeat center center/cover;
+    padding-top: 0rem;
+  }
+  .timeline {
+    ul li div {
+      width: 250px;
+    }
+    ul li {
+      &:nth-child(even) div {
+        left: -289px;
+      }
+    }
+  }
+
+  // Galeria
+  #galeria {
+    height: 100%;
+    overflow: auto;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0.5rem;
+      padding: 0;
+      border-radius: 15px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      border-bottom: solid 1rem $thirdColor;
+      margin-bottom: 6rem;
+    }
+    a {
+      width: auto;
+    }
+  }
+
+  //Kontact
+  #kontact {
+    padding-top: 3rem;
+    height: 100vh;
+    .container {
+      @include flexcenter();
+    }
+    .left {
+      padding: 0 2rem;
+      text-align: center;
+      border-radius: 0rem;
+      height: 50vh;
+      height: auto;
+
+      iframe {
+        background-color: $primaryColor;
+        padding-bottom: 0;
+        border-radius: 0.4rem;
+        width: 320px;
+        height: 300px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        white-space: pre-wrap;
+        margin: 1rem 0;
+        border-bottom: $thirdColor 2px solid;
+      }
+      p {
+        font-size: 1.1rem;
+        color: $brightColor;
+      }
+    }
+    .right {
+      padding: 0rem;
+      text-align: center;
+      color: $brightColor;
+      background: linear-gradient(190deg, $thirdColor 10%, $primaryColor 11%);
+      padding: 1rem;
+      border-radius: 1rem;
+      height: 50vh;
+      form {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          font-size: 1rem;
+          text-align: justify;
+        }
+
+        input,
+        textarea {
+          padding: 0.5rem 1rem;
+          margin: 0.5rem 0;
+          border-radius: 0.2rem;
+          width: 300px;
+          border: none;
+          font-size: 1rem;
+          outline: none;
+        }
+        input:focus,
+        textarea:focus {
+          border: 2px $thirdColor solid;
+        }
+        textarea {
+          height: 200px;
+          resize: none;
+        }
+
+        ::placeholder {
+          opacity: 0.7;
+        }
+        button {
+          background-color: $thirdColor;
+          color: $brightColor;
+          &:hover {
+            background: $blueWhite;
+            color: whitesmoke;
+            opacity: 0.9;
+            box-shadow: 0 0 10px transparent, 0 0 15px $brightColor;
+          }
+        }
+      }
+    }
+  }
+
+  .sml-btn {
+    text-align: center;
+    font-size: 12px;
+    padding: 0.1rem;
+    white-space: nowrap;
+    width: 60px;
+    height: 40px;
+  }
+}
+
+//Mobile queries
+//Medium small
+
+@media screen and (max-width: 768px) {
+  html {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  // Navigation
+  #main-nav {
+    position: fixed;
+    width: 100%;
+
+    z-index: 100;
+
+    .container {
+      display: flex;
+      padding: 0 1rem;
+      justify-content: space-between;
+    }
+    ul {
+      display: none;
+    }
+    .mob-logo {
+      display: block;
+      width: 150px;
+    }
+  }
+
+  // Burger Menu
+  .container {
+    padding: 3rem 2rem;
+  }
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    padding-top: 1.5rem;
+    z-index: 99;
+  }
+  .hamburger .bar,
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: $brightColor;
+    margin: 6px 0px;
+    transition: 0.4s;
+    z-index: 99;
+  }
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 98;
+    background: url(/dist/img/menu\ background.svg) no-repeat center/cover;
+    padding-top: 120px;
+    transition: 0.4s;
+
+    a {
+      color: $blueWhite;
+      border-bottom: $brightColor 1px solid;
+      text-transform: uppercase;
+      background-color: none;
+      font-weight: bolder;
+      font-size: 1.1rem;
+      margin: 0 auto 1rem;
+      display: flex;
+      white-space: nowrap;
+      width: 100%;
+      text-align: center;
+      padding: 12px 16px;
+      transition: all 0.3s ease-in-out;
+      border-radius: 0.2rem;
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+  .mobile-nav.is-active {
+    left: 30%;
+  }
+  //header
+  .slider {
+    display: none;
+  }
+  .section-b .container .pics {
+    display: block;
+    background: none;
+
+    img {
+      box-shadow: 0 0 10px transparent, 0 0 40px $brightColor;
+      margin-bottom: 1rem;
+    }
+  }
+  //footer
+  #main-footer {
+    div {
+      padding: 1rem 0 0 0;
+      display: flex;
+      flex-direction: column;
+      @include flexcenter();
+    }
+    p {
+      color: $brightColor;
+      margin-bottom: 0;
+    }
+    ul li a {
+      font-size: 0.8rem;
+    }
+    ul {
+      padding: 0;
+      display: flex;
+    }
+  }
+
+  //kursy
+  #main-kursy {
+    background: url(/dist/img/Animated\ Shape\ \ height.svg) no-repeat center
+      center/cover;
+  }
+
+  .section {
+    h2 {
+      font-size: 2rem;
+      padding: 0.5rem 0;
+    }
+    p {
+      font-size: 1rem;
+    }
+    img {
+      width: 200px;
+      margin: 1rem 0;
+    }
+    .student1 {
+      width: 400px;
+    }
+  }
+
+  #onas {
+    background: url(/dist/img/blob-scene-haikei\ back.svg) no-repeat center
+      center/cover;
+    margin: 0;
+    color: rgb(185, 177, 177);
+
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0rem;
+    .container {
+      background: none;
+      margin-bottom: 0;
+    }
+    a {
+      background-color: $secondaryColor;
+    }
+    h3 {
+      color: $brightColor;
+    }
+    h3 + p {
+      color: $brightColor;
+    }
+  }
+
+  //cennik
+  .cennik {
+    img {
+      width: 80px;
+    }
+    background: url(/dist/img/Animated\ Shape.svg) no-repeat center center/cover;
+    padding-top: 6rem;
+    // h2 {
+    //   display: none;
+    // }
+  }
+  .timeline ul li {
+    margin-left: 10px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #f45b69 transparent transparent;
+  }
+
+  // Galeria
+  #galeria {
+    background: url(/dist/img/Animated\ Shape\ \ height.svg) center center/cover
+      no-repeat;
+    .container {
+      display: block;
+
+      padding: 0;
+      border-radius: 0px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.6rem;
+      border-bottom: solid 0.4rem $thirdColor;
+      margin: 7rem 0;
+    }
+    a {
+      width: 100%;
+      padding: 0.3rem 0;
+      margin: 0 auto;
+      &:hover {
+        box-shadow: none;
+        transform: scale(0.9) translate(1%, 1%);
+      }
+      &:last-child {
+        margin-bottom: 2rem;
+      }
+    }
+    img {
+      border: solid 1px $brightColor;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0;
+      filter: none;
+    }
+  }
+
+  //Kontact
+  #kontact {
+    background: url(/dist/img/Animated\ Shape\ \ height.svg) no-repeat center
+      center/cover;
+    padding-top: 2rem;
+    height: 100%;
+    .container {
+      display: block;
+      height: 100%;
+      width: 100%;
+      i {
+        color: $brightColor;
+      }
+    }
+
+    .left {
+      margin: 3rem 0;
+      text-align: center;
+      border-radius: 0rem;
+      height: 50vh;
+      height: auto;
+      border-bottom: dotted $brightColor 1px;
+
+      iframe {
+        margin: 1rem 0;
+        background-color: $primaryColor;
+        padding-bottom: 0;
+        border-radius: 0.4rem;
+        width: 100%;
+        height: 280px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        white-space: pre-wrap;
+        margin: 1rem 0;
+        border-bottom: $thirdColor 2px solid;
+      }
+      p {
+        font-size: 1.1rem;
+        color: $brightColor;
+      }
+    }
+    .right {
+      margin: 0 auto;
+      text-align: center;
+      color: $brightColor;
+      background: linear-gradient(
+        190deg,
+        $thirdColor 1%,
+        $primaryColor 11% blur(1px)
+      );
+      padding: 1rem;
+      border-radius: 1rem;
+      height: 100%;
+      form {
+        overflow: scroll;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          margin: 0 auto;
+          width: 400px;
+          font-size: 1rem;
+          text-align: justify;
+        }
+
+        input,
+        textarea {
+          padding: 0.6rem 1rem;
+          margin: 0.4rem auto;
+          border-radius: 0.2rem;
+          width: 300px;
+          border: none;
+          font-size: 1rem;
+          outline: none;
+        }
+        input:focus,
+        textarea:focus {
+          border: 1px $thirdColor solid;
+        }
+        textarea {
+          height: 200px;
+          resize: none;
+        }
+
+        ::placeholder {
+          opacity: 0.7;
+        }
+        button {
+          margin: 0 auto;
+          width: 200px;
+          background-color: $thirdColor;
+          color: $brightColor;
+          &:hover {
+            background: $blueWhite;
+            color: whitesmoke;
+            opacity: 0.9;
+            box-shadow: 0 0 10px transparent, 0 0 15px $brightColor;
+          }
+        }
+      }
+    }
+  }
+}

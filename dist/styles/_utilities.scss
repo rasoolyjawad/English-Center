@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: $brightColor;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
+  padding: 12px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 1rem;
+  &:hover {
+    box-shadow: 0 0 10px transparent, 0 0 40px $brightColor;
+  }
+}
+
+.btn {
+  color: $brightColor;
+  background-color: $primaryColor;
+  text-transform: uppercase;
+  font-weight: bolder;
+  display: inline-block;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem 1.2rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 1rem;
+  &:hover {
+    opacity: 0.7;
+    box-shadow: 0 0 10px transparent, 0 0 40px $brightColor;
+  }
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+.container {
+  padding: 1rem 10rem;
+  margin: 0 auto;
+}
+.current {
+  background: $thirdColor;
+  border-radius: 1rem;
+  &:hover {
+    background: $blueWhite;
+    color: whitesmoke;
+    opacity: 0.9;
+    box-shadow: 0 0 10px transparent, 0 0 15px $brightColor;
+  }
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+h2,
+h1 {
+  color: $brightColor;
+  text-transform: uppercase;
+}

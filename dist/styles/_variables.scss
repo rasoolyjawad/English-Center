@@ -1,0 +1,33 @@
+/* COLORS FOR PROJECT */
+$primaryColor: #289579;
+$secondaryColor: #48759c;
+$thirdColor: #c55c6b;
+$brightColor: #f5f5f5;
+$darkColor: #322f2d;
+$blueWhite: linear-gradient(to left top, #cdcdcd, $secondaryColor);
+
+@mixin flexcenter {
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  display: flex;
+}
+@mixin btn {
+  color: $brightColor;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+}
+
+@mixin margin {
+  margin: 0 auto;
+}
+@mixin borderMix {
+  border-bottom: 10px solid $primaryColor;
+  border-top: 10px solid $primaryColor;
+  border-radius: 10rem;
+}
