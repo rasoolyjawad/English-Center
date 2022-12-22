@@ -939,7 +939,7 @@ body {
     width: 400px;
   }
   #onas {
-    background: url(/dist/img/blob-scene-haikei\ back.svg) no-repeat center center/cover;
+    background: url(dist/img/blob-scene-haikei\ back.svg) no-repeat center center/cover;
     margin: 0;
     color: rgb(185, 177, 177);
     width: 100%;
